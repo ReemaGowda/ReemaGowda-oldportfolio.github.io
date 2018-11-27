@@ -11,24 +11,15 @@ html {
 	font-size: 62.5%;
 }
 
-/*body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 1.6rem;
-	background:linear-gradient(-120deg,#FFE600 ,#FFE600 ); 
-	margin: 0;
-}*/
-
-
 body {
- 
-  background: linear-gradient(180deg, #308a73, #6a576b,#FFE600 );
+  background: linear-gradient(180deg, #308a73,#222 ,#FFE600 );
   background-size: 600% 600%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   margin: 0;
   animation: AnimationName 20s ease infinite; }
 
-@keyframes AnimationName {
+  @keyframes AnimationName {
   0% {
     background-position: 0% 32%; }
   50% {
@@ -44,7 +35,7 @@ a:visited
 
 a {
 	text-decoration: none;
-  color: white;
+
 }
 
 li
@@ -65,9 +56,10 @@ ul
 	max-width: 1100px;
 	margin: 0 auto;
 	/*border: 1px solid red;*/
-	background-color:white;
+  background-color: #fff;
 	box-shadow: 0 0 5px #FFD700;
 	margin-top: 100px;
+
 
 }
 
@@ -75,7 +67,6 @@ ul
 {
   width: 78%;
   margin: 0 auto;
-
 
 }
 
@@ -100,13 +91,13 @@ img
 
 /*GENEARL STYLE END*/
 
-/*MENU BAR STYLE*/
-
+/*SIDE MENU BAR STYLE STARTS*/
 .icon-bar {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+
 }
 
 .icon-bar a {
@@ -123,8 +114,9 @@ img
 }
 
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: rgb(255,165,0);
   transform: translateX(-10%);
+
 }
 
 .facebook {
@@ -151,6 +143,9 @@ img
   background: #bb0000;
   color: white;
 }
+/*SIDE MENU BAR STYLE ENDS*/
+
+/*HEADER MENU BAR STYLE START*/
 .headerclass
 {
 	display: flex;
@@ -165,6 +160,7 @@ img
 	font-family: 'Audiowide', cursive;
 	display: flex;
 	font-size: 6.0rem;
+  color: #222;
 }
 
 .box
@@ -187,7 +183,7 @@ a:visited
 {
 	background-color: black;
   transition: all 0.5s ease;
-  border: 1px solid gold;
+  border: 1px solid tomato;
 }
 
 .ac
@@ -203,9 +199,7 @@ a:visited
   background-color: black;
   transition: all 0.5s ease;
 }
-
-/*MENU BAR STYLE ENDS*/
-
+/*HEADER MENU BAR STYLE START*/
 
 /*About style start*/
 
@@ -220,27 +214,29 @@ a:visited
     width: 40%;
     padding-right: 28px;
     float: left;
+    color: #222;
   }
   .content {
     width: 60%;
     float: right;
     margin: 0;
     padding: 10px;
+    color: #222;
   }
 
 .mypic
 {
-  border: 10px solid teal;
+  border: 10px solid #222;
   padding: 15px;
   width: 500px;
   border-radius: 50%;
+
 }
 
-/*.mypic:hover
+.mypic:hover
 {
-	transform: rotate(-60deg);
-
-}*/
+	opacity: 0.8;
+}
 
 .name
 {
@@ -257,10 +253,10 @@ a:visited
 
 .name::first-letter
 {
-   background-color: rgb(32,178,170);
+  background-color: rgb(32,178,170);
 	color: palegoldenrod;
 	padding: 5px;
-	border: 2px solid white;
+	border: 2px solid tomato;
 	
 }
 
@@ -279,7 +275,7 @@ a:visited
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
   line-height: 2.1;
-   color: black;
+   color: #222;
 
 }
 
@@ -293,8 +289,7 @@ footer
 	clear: both;
 	height: 300px;
 	background: teal;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .copyright
@@ -302,11 +297,12 @@ footer
     animation :type 5s steps(21);
     overflow: hidden;
     white-space: nowrap;
-    border-right: 4px solid yellow;
+    border-right: 8px solid black;
     width: 21ch;
     font-size: 7.0rem;
     padding: 50px;
    text-align: center;
+   color: white;
 
 }
 
@@ -338,34 +334,26 @@ footer
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-
+  font-size: 1.5rem;
 }
 
 .singleskill {
   display: inline-block;
-  width: 32%;
+  width: 33%;
   background-color: #f3f3f3;
   padding: 25px;
   color: black;
-  font-family: avenir;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
   border-bottom: 5px solid skyblue;
   text-align: center;
 }
 
 .singleskillb {
   display: inline-block;
-  width: 32%;
+  width: 33%;
   background-color: #f3f3f3;
   padding: 25px;
   color: black;
-  font-family: avenir;
   text-align: left;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
   border-bottom: 5px solid orange;
   text-align: center;
 }
@@ -385,17 +373,18 @@ img.skillicon {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 15px;  
+  padding-bottom: 15px; 
+  
 }
 .singleskill:hover
 {
-   background-color: gold;
+   background-color: teal;
    transition: all 0.5s ease;
 }
 
 .singleskillb:hover
 {
-   background-color: gold;
+   background-color: teal;
    transition: all 0.5 ease;
 	
 }
@@ -412,6 +401,7 @@ img.skillicon {
   font-size: 4.0rem;
   text-align: center;
   letter-spacing: 2px;
+  color: #222;
 
 }
 
@@ -423,6 +413,7 @@ img.skillicon {
 {
   text-align: center;
   font-size: 4.0rem;
+  color: #222;
 }
 .Container-port {
   width: 100%;
@@ -487,6 +478,9 @@ figure:focus {
 .edu
 {
   text-align: center;
+  color: #222;
+  border: 2px solid teal;
+  padding: 25px;
 }
 
 .pe
@@ -500,7 +494,7 @@ figure:focus {
 /*Contact Style start*/
 a:visited
 {
-  color: white;
+  color: #fff;
 }
 .contactt
 {
@@ -508,6 +502,7 @@ a:visited
   justify-content: center;
   align-items: center;
   font-size: 4.0rem;
+  color: #222;
 }
 .contactme
 {
@@ -515,6 +510,9 @@ a:visited
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #222;
+  padding: 100px;
+  font-size: 2.5rem;
 }
 .contactform {
   max-width:400px;
@@ -610,6 +608,7 @@ fieldset {
 .copyright
 {
   font-size: 4.0rem;
+
 }
 
 .mypic
@@ -698,6 +697,10 @@ fieldset {
   {
     width: 50%;
   } 
+  .contactme
+  {
+    font-size: 2.0rem;
+  }
 }
 
 @media only screen and (max-width : 670px) {
@@ -751,7 +754,7 @@ fieldset {
   }
   .copyright
   {
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     padding: 10px;
   }
 
@@ -767,13 +770,18 @@ fieldset {
 
   .edu
   {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    padding: 5px;
   }
 
 .contactform
 {
   max-width: 400px;
 }
+.contactme
+  {
+    font-size: 2.0rem;
+    }
  
 }
 
@@ -805,13 +813,15 @@ fieldset {
   .copyright
   {
     padding: 0;
-    font-size: 2.0rem;
+    font-size: 1.9rem;
   }
 
 
   footer
   {
     height: 100px;
+
+
   }
 
   .para1
@@ -829,6 +839,11 @@ fieldset {
   background-color: black;
   transition: all 0.5s ease;
 }
+
+.contactme
+  {
+    font-size: 0.8rem;
+    }
     
 }
 
